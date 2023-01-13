@@ -1,0 +1,20 @@
+<html>
+<head><script>  
+function getvalue(){
+    var numToGen = document.getElementById('numToGen');
+    var aReNamea = numToGen.value;
+    var resultName = encodeToGb2312(aReNamea);
+    var obj = document.getElementById('s1');
+    obj.innerHTML = '结果:'+resultName;
+  }
+  </script></head>
+<body>
+<script type="text/javascript" src="encodeToGb2312.js"></script>
+<div id="d1">
+<p>test</p>
+<p><div><input id ="numToGen" name="numToGen" type="texts" value="啊"></div></p>
+<p><div><input id ="button" value="点击按钮" type="button" onclick="getvalue()"></div></p>  
+</div>
+<span id="s1">结果:<span>
+</body>
+</html>
